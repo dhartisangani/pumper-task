@@ -1,0 +1,272 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 341px;
+}
+
+.title {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  font-size: 20px;
+  color: #ff6b82;
+  font-weight: 600;
+  margin: 20px 0px;
+  font-family: "Inter", sans-serif;
+}
+
+.title h4 {
+  margin: 0;
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.line {
+  border: 0.5px solid #c8c8c8;
+  width: 91.65px;
+  height: 0px;
+  opacity: 1;
+}
+
+.product-options {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.option {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  border: 2px solid #c8c8c8;
+  transition: background-color 0.3s;
+  background-color: #fff;
+  gap: 10px;
+}
+
+.option:hover {
+  background-color: #fff9fa;
+  border: 2px solid #ff6b82;
+  cursor: pointer;
+}
+
+.option.selected {
+  background-color: #fff5f6;
+  border: 2px solid #ff6b82;
+}
+
+#oneUnit {
+  accent-color: red;
+}
+
+#twoUnits {
+  accent-color: red;
+}
+
+#threeUnits {
+  accent-color: red;
+}
+
+.product-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 4px;
+  gap: 10px;
+}
+
+.product {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.unit {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.unit label {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.discount {
+  margin-left: 5px;
+  background-color: #ff6b82;
+  color: white;
+  padding: 3px;
+  font-size: 14px;
+}
+
+.price {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.price-value {
+  font-size: 16px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.original-price {
+  font-size: 14px;
+  color: #999;
+  text-decoration: line-through;
+}
+
+.dropdowns {
+  display: none;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.option.selected .dropdowns {
+  display: flex;
+ 
+}
+
+.dropdowns select {
+  width: 70px;
+  padding: 5px;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  font-size: 12px;
+}
+.empty {
+  width: 25px;
+}
+
+.select-size {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+}
+
+.select-color {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 5px;
+}
+
+.size-label {
+  font-size: 14px;
+  position: relative;
+  left: 23px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 66%;
+}
+
+.popular-product {
+  width: 119px;
+  height: 21px;
+  position: absolute;
+  top: -6px;
+  right: 4px;
+  border-radius: 0px 0px 4px 4px;
+  background: #ff6b82;
+  color: white;
+  text-align: center;
+  z-index: 1;
+  overflow: visible;
+}
+
+/* Left corner (triangle) */
+.popular-product::before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: -5px;
+  border-style: solid;
+  border-width: 0px 4px 6px 0;
+  border-color: transparent transparent #d1455f transparent;
+  width: 0;
+  height: 0;
+  transform: rotate(-90deg);
+}
+
+/* Right corner (triangle) */
+.popular-product::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: -5px;
+  border-style: solid;
+  border-width: 0px 5px 5px 0;
+  border-color: transparent transparent #d1455f transparent;
+  width: 0;
+  height: 0;
+  transform: rotate(0deg);
+}
+
+.payment {
+  margin: 10px 0px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.payment p {
+  color: #ff6b82;
+  font-weight: 500;
+}
+
+button {
+  width: 100%;
+  background-color: #ff6b82;
+  color: white;
+  padding: 10px;
+  border: none;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #f5425d;
+  cursor: pointer;
+}
+
+button::before {
+  content: "+";
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.footer {
+  font-size: 12px;
+  color: #00000066;
+  margin: 5px 0px;
+  text-align: end;
+  width: 100%;
+}
+
+@media screen and (max-width: 617px) and (min-width: 320px) {
+  .container {
+    width: 300px;
+  }
+
+  .title h4 {
+    font-size: 14px;
+  }
+}

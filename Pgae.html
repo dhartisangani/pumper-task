@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pumper Product</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="title">
+        <div class="line"></div>
+        <h4>YAY! It's BOGO</h4>
+        <div class="line"></div>
+      </div>
+
+      <!-- Product Options Section -->
+      <div class="product-options">
+        <!-- Option 1 -->
+        <div class="option" onclick="selectOption(this)">
+          <div class="product-container">
+            <input type="radio" name="quantity" id="oneUnit" value="1" />
+            <div class="product">
+              <div class="unit">
+                <div>
+                  <label for="oneUnit">1 Unit</label>
+                  <span class="discount">10% Off</span>
+                </div>
+                <div>DKK 195.00</div>
+              </div>
+              <div class="price">
+                <span class="price-value">$10.00 USD</span>
+                <span class="original-price">$24.00 USD</span>
+              </div>
+            </div>
+          </div>
+          <div class="dropdowns">
+            <div class="empty"></div>
+            <div>
+              <div class="size-label">
+                <label for="size">Size</label>
+                <label for="color">Color</label>
+              </div>
+              <div class="select-size">
+                <span>#1</span>
+                <select name="size" id="size">
+                  <option value="small">S</option>
+                  <option value="medium">M</option>
+                  <option value="large">L</option>
+                </select>
+                <select name="color" id="color">
+                  <option value="red">Red</option>
+                  <option value="blue">Blue</option>
+                  <option value="green">Green</option>
+                </select>
+              </div>
+              <div class="select-size">
+                <span>#2</span>
+                <select name="size" id="size">
+                  <option value="small">XS</option>
+                  <option value="medium">XL</option>
+                  <option value="large">XXL</option>
+                </select>
+                <select name="color" id="color">
+                  <option value="red">Black</option>
+                  <option value="blue">Yellow</option>
+                  <option value="green">Pink</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Option 2 -->
+        <div class="option" onclick="selectOption(this)">
+          <span class="popular-product"> Most Popular </span>
+
+          <div class="product-container">
+            <input type="radio" name="quantity" id="twoUnits" value="2" />
+            <div class="product">
+              <div class="unit">
+                <div>
+                  <label for="twoUnits">2 Units</label>
+                  <span class="discount">20% Off</span>
+                </div>
+                <div>DKK 380.00</div>
+              </div>
+              <div class="price">
+                <span class="price-value">$18.00 USD</span>
+                <span class="original-price">$24.00 USD</span>
+              </div>
+            </div>
+          </div>
+          <div class="dropdowns">
+            <div class="empty"></div>
+            <div>
+              <div class="size-label">
+                <label for="size">Size</label>
+                <label for="color">Color</label>
+              </div>
+              <div class="select-size">
+                <span>#1</span>
+                <select name="size" id="size">
+                  <option value="small">S</option>
+                  <option value="medium">M</option>
+                  <option value="large">L</option>
+                </select>
+                <select name="color" id="color">
+                  <option value="red">Red</option>
+                  <option value="blue">Blue</option>
+                  <option value="green">Green</option>
+                </select>
+              </div>
+              <div class="select-size">
+                <span>#2</span>
+                <select name="size" id="size">
+                  <option value="small">XS</option>
+                  <option value="medium">XL</option>
+                  <option value="large">XXL</option>
+                </select>
+                <select name="color" id="color">
+                  <option value="red">Black</option>
+                  <option value="blue">Yellow</option>
+                  <option value="green">Pink</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Option 3 -->
+        <div class="option" onclick="selectOption(this)">
+          <div class="product-container">
+            <input type="radio" name="quantity" id="threeUnits" value="3" />
+            <div class="product">
+              <div class="unit">
+                <div>
+                  <label for="threeUnits">3 Units</label>
+                  <span class="discount">30% Off</span>
+                </div>
+                <div>DKK 585.00</div>
+              </div>
+              <div class="price">
+                <span class="price-value">$24.00 USD</span>
+                <span class="original-price">$24.00 USD</span>
+              </div>
+            </div>
+          </div>
+          <div class="dropdowns">
+            <div class="empty"></div>
+            <div>
+              <div class="size-label">
+                <label for="size">Size</label>
+                <label for="color">Color</label>
+              </div>
+              <div class="select-size">
+                <span>#1</span>
+                <select name="size" id="size">
+                  <option value="small">S</option>
+                  <option value="medium">M</option>
+                  <option value="large">L</option>
+                </select>
+                <select name="color" id="color">
+                  <option value="red">Red</option>
+                  <option value="blue">Blue</option>
+                  <option value="green">Green</option>
+                </select>
+              </div>
+              <div class="select-size">
+                <span>#2</span>
+                <select name="size" id="size">
+                  <option value="small">XS</option>
+                  <option value="medium">XL</option>
+                  <option value="large">XXL</option>
+                </select>
+                <select name="color" id="color">
+                  <option value="red">Black</option>
+                  <option value="blue">Yellow</option>
+                  <option value="green">Pink</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Payment Section -->
+      <div class="payment">
+        <p>Free Delivery</p>
+        <span>Total : $18.00 USD</span>
+      </div>
+
+      <!-- Add to Cart Button -->
+      <button>Add to Cart</button>
+      <div class="footer">@ Powered by Pumper</div>
+    </div>
+  </body>
+</html>
